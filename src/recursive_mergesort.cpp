@@ -2,6 +2,7 @@
 #include <iostream>
 #include <chrono>
 using namespace std;
+// define the number of unsorted elements
 #define N 500000
 uint32_t arr[N];
 
