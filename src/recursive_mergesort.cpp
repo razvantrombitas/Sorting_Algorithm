@@ -60,7 +60,8 @@ template <class T> void mergeSort(T arr[], int l, int r) {
         mergeSort<T>(arr, m + 1, r);
 
         // Merge the sorted subarrays
-        if (arr[m] > arr[m + 1]) // optimization: the array is already sorted; by adding this if O(n) time complexity could be obtained in best case
+        // optimization: the array is already sorted; by adding this if O(n) time complexity could be obtained in best case
+        if (arr[m] > arr[m + 1]) 
         	merge<T>(arr, l, m, r);
     }
 }
